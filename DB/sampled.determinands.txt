@@ -1,0 +1,38 @@
+11Cl-PF3OUdS 11-chloroeicosafluoro-3-oxaundecane-1-sulfonic acid (F-53B Minor)
+3:3 FTCA 3:3 Fluorotelomer carboxylic acid
+4:2 FTSA 4:2 Fluorotelomer sulfonic acid
+5:3 FTCA "2H,2H,3H,3H-Perfluorooctanoic acid"
+6:2 FTSA 6:2 Fluorotelomer sulfonic acid
+7:3 FTCA 3-Perfluoroheptylpropanoic acid
+8:2 FTSA 8:2 Fluorotelomer sulfonic acid
+9Cl-PF3ONS 9-chlorohexadecafluoro-3-oxanonane-1-sulfonic acid
+ADONA "4,8-Dioxa-3H-perfluorononanoic acid (ADONA)"
+EtFOSA N-Ethylperfluorooctanesulfonamide
+FBSA Perfluorobutylsulfonamide (perfluorobutane sulfonamide)
+FOSA Perfluorooctanesulfonamide
+HFPO-DA Hexafluoropropylene oxide dimer acid (Gen X)
+N-MeFOSA N-methylperfluorooctanesulfonamide
+PFBA Perfluorobutanoic acid
+PFBS Perfluorobutanesulfonic acid
+PFdecncAcid Perfluorodecanoic acid
+PFdodencAcid Perfluorododecanoic acid
+PFDoS Perfluorododecane sulfonic acid
+PFDS Perfluorodecanesulfonic acid
+PFecHS Perfluoro-4-ethylcyclohexanesulfonic acid
+PFEESA Perfluoro(2-ethoxyethane)sulfonic acid
+PFheptncAcid Perfluoroheptanoic acid
+PFhexncAcid Perfluorohexanoic acid
+PFHpS Perfluoroheptanesulfonic acid
+PFHxSA Perfluorohexanesulfonamide
+PFHxS-B Perfluorohexanesulfonic acid (B)
+PFHxS-L Perfluorohexanesulfonic acid (L)
+PFnonncAcid Perfluorononanoic acid
+PFNS Perfluorononanesulfonic acid
+pFoctanoate Perfluorooctanoate anion
+PFoctncAcid Perfluorooctanoic acid
+PFOS (T) Perfluorooctanesulfonic acid (total)
+PFpentncAcid Perfluoropentanoic acid
+PFPeS Perfluoropentanesulfonic acid
+PFtetdncAcid Perfluorotetradecanoic acid
+PFTrDA Perfluorotridecanoic acid
+PFundencAcid Perfluoroundecanoic acid

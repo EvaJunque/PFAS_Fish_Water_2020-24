@@ -1,0 +1,68 @@
+####DELETED IN THE DATABASE####
+determinand.label determinand.definition
+DiClDiFMetha Dichlorodifluoromethane -  but it is a PFAS!
+EtFOSAA-B 2-(N-Ethylperfluorooctanesulfonamido)acetic acid (B) - we only keep EtFOSA N-Ethylperfluorooctanesulfonamide
+EtFOSAA-L 2-(N-Ethylperfluorooctanesulfonamido)acetic acid (L) - we only keep EtFOSA N-Ethylperfluorooctanesulfonamide
+EtFOSE N-Ethyl-N-(2-hydroxyethyl)perfluorooctanesulfonamide
+Fluoroxypyr Fluroxypyr
+HFPO-TA Hexafluoropropylene oxide trimer acid -  but it is a PFAS!
+MeFOSE N-Methyl-N-(2-hydroxyethyl)perfluorooctanesulfonamide -  but it is a PFAS!
+MeFOSAA-B 2-(N-Methylperfluorooctanesulfonamido)acetic acid (B)- we only keep N-MeFOSA N-methylperfluorooctanesulfonamide
+MeFOSAA-L 2-(N-Methylperfluorooctanesulfonamido)acetic acid (L) - we only keep N-MeFOSA N-methylperfluorooctanesulfonamide
+NFDHA "Perfluoro-3,6-dioxaheptanoic acid"
+PFHxDA Perfluorohexadecanoic acid -  but it is a PFAS!
+PFMOBA Perfluoro(4-methoxybutanoic) acid -  but it is a PFAS!
+PFMOPrA Perfluoro-3-methoxypropanoic acid -  but it is a PFAS!
+PFODA Perfluorooctadecanoic acid  -  but it is a PFAS!
+PFOS (B) Perfluorooctanesulfonic acid (branched) - we only keep PFOS total
+PFOS (L) Perfluorooctanesulfonic acid (linear) - we only keep PFOS total
+PFOS Perfluorooctylsulphonate anion - we only keep PFOS total
+PFTrDS Perfluorotridecane sulfonic acid - but it is a PFAS
+PFUnDS Perfluoroundecane sulfonic acid - but it is a PFAS
+TextVirology Text determinand for virology samples
+TrCFMethan Trichlorofluoromethane
+
+
+
+####INCLUDED IN THE DATABASE####
+11Cl-PF3OUdS 11-chloroeicosafluoro-3-oxaundecane-1-sulfonic acid (F-53B Minor)
+3:3 FTCA 3:3 Fluorotelomer carboxylic acid
+4:2 FTSA 4:2 Fluorotelomer sulfonic acid
+5:3 FTCA "2H,2H,3H,3H-Perfluorooctanoic acid"
+6:2 FTSA 6:2 Fluorotelomer sulfonic acid
+7:3 FTCA 3-Perfluoroheptylpropanoic acid
+8:2 FTSA 8:2 Fluorotelomer sulfonic acid
+9Cl-PF3ONS 9-chlorohexadecafluoro-3-oxanonane-1-sulfonic acid
+ADONA "4,8-Dioxa-3H-perfluorononanoic acid (ADONA)"
+EtFOSA N-Ethylperfluorooctanesulfonamide
+FBSA Perfluorobutylsulfonamide (perfluorobutane sulfonamide)
+FOSA Perfluorooctanesulfonamide
+HFPO-DA Hexafluoropropylene oxide dimer acid (Gen X)
+N-MeFOSA N-methylperfluorooctanesulfonamide
+PFBA Perfluorobutanoic acid
+PFBS Perfluorobutanesulfonic acid
+PFdecncAcid Perfluorodecanoic acid
+PFdodencAcid Perfluorododecanoic acid
+PFDoS Perfluorododecane sulfonic acid
+PFDS Perfluorodecanesulfonic acid
+PFecHS Perfluoro-4-ethylcyclohexanesulfonic acid
+PFEESA Perfluoro(2-ethoxyethane)sulfonic acid
+PFheptncAcid Perfluoroheptanoic acid
+PFhexncAcid Perfluorohexanoic acid
+PFHpS Perfluoroheptanesulfonic acid
+PFHxSA Perfluorohexanesulfonamide
+PFHxS-B Perfluorohexanesulfonic acid (B) ----- we should sum PFHxS-B with -L
+PFHxS-L Perfluorohexanesulfonic acid (L)
+PFnonncAcid Perfluorononanoic acid ----- we should rewrite this one as "ADONA "4,8-Dioxa-3H-perfluorononanoic acid (ADONA)""
+PFNS Perfluorononanesulfonic acid
+PFoctncAcid Perfluorooctanoic acid --- We should change the same name this two (acid and anion, they are both PFOA)
+pFoctanoate Perfluorooctanoate anion - 
+PFOS (T) Perfluorooctanesulfonic acid (total)
+PFpentncAcid Perfluoropentanoic acid
+PFPeS Perfluoropentanesulfonic acid
+PFtetdncAcid Perfluorotetradecanoic acid
+PFTrDA Perfluorotridecanoic acid
+PFundencAcid Perfluoroundecanoic acid
+
+
+
