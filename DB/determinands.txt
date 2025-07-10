@@ -1,0 +1,99 @@
+11Cl-PF3OUdS - 11-chloroeicosafluoro-3-oxaundecane-1-sulfonic acid (F-53B Minor)
+3:3 FTCA - 3:3 Fluorotelomer carboxylic acid
+3:3 FTCA ww - 3:3 Fluorotelomer carboxylic acid: wet wt
+4:2 FTSA - 4:2 Fluorotelomer sulfonic acid
+4:2 FTSA ww - 4:2 Fluorotelomer sulfonic acid: wet wt
+5:3 FTCA - "2H,2H,3H,3H-Perfluorooctanoic acid"
+5:3 FTCA ww - "2H,2H,3H,3H-Perfluorooctanoic acid: wet wt"
+6:2ClPFESAww - 9-chlorohexadecafluoro-3-oxanonane-1-sulfonic acid (F-53B Major): WW
+6:2 FTS - "1H,1H,2H,2H-perfluorooctane sulfonic acid : wet wt"
+6:2 FTSA - 6:2 Fluorotelomer sulfonic acid
+6:6 PFPi ww - 6:6 Perfluorophosphinic acid: wet wt
+6:8 PFPi ww - 6:8 Perfluorophosphinic acid: wet wt
+7:3 FTCA - 3-Perfluoroheptylpropanoic acid
+7:3 FTCA ww - 3-Perfluoroheptylpropanoic acid: wet wt
+8:2ClPFESAww - 11-chloroeicosafluoro-3-oxaundecane-1-sulfonic acid (F-53B Minor): WW
+8:2 FTSA - 8:2 Fluorotelomer sulfonic acid
+8:2 FTSA ww - 8:2 Fluorotelomer sulfonic acid: wet wt
+8:8 PFPi ww - 8:8 Perfluorophosphinic acid: wet wt
+9Cl-PF3ONS - 9-chlorohexadecafluoro-3-oxanonane-1-sulfonic acid
+ADONA - "4,8-Dioxa-3H-perfluorononanoic acid (ADONA)"
+ADONA ww - "4,8-Dioxa-3H-perfluorononanoic acid (ADONA) : wet wt"
+determinand.label - determinand.definition
+EtFOSAA-B - 2-(N-Ethylperfluorooctanesulfonamido)acetic acid (B)
+EtFOSAA-L - 2-(N-Ethylperfluorooctanesulfonamido)acetic acid (L)
+EtFOSA - N-Ethylperfluorooctanesulfonamide
+EtFOSE - N-Ethyl-N-(2-hydroxyethyl)perfluorooctanesulfonamide
+FBSA - Perfluorobutylsulfonamide (perfluorobutane sulfonamide)
+FBSA ww - Perfluorobutylsulfonamide (perfluorobutane sulfonamide) : wet wt
+FHxSA ww - Perfluorohexanesulfonamide: wet wt
+Fluoroxypyr - Fluroxypyr
+FOSA - Perfluorooctanesulfonamide
+HFPO-DA - Hexafluoropropylene oxide dimer acid (Gen X)
+HFPO-TA - Hexafluoropropylene oxide trimer acid
+MeFOSAA-B - 2-(N-Methylperfluorooctanesulfonamido)acetic acid (B)
+MeFOSAA-L - 2-(N-Methylperfluorooctanesulfonamido)acetic acid (L)
+MeFOSE - N-Methyl-N-(2-hydroxyethyl)perfluorooctanesulfonamide
+N-EtFOSAA-Br - 2-(N-Ethylperfluorooctanesulfonamido)acetic acid - branched
+N-EtFOSAA-L - 2-(N-Ethylperfluorooctanesulfonamido)acetic acid - linear
+NFDHA - "Perfluoro-3,6-dioxaheptanoic acid"
+N-MeFOSAA-Br - 2-(N-Methylperfluorooctanesulfonamido)acetic acid - branched
+N-MeFOSAA-L - 2-(N-Methylperfluorooctanesulfonamido)acetic acid - linear
+NMeFOSAA ww - 2-(N-Methylperfluorooctanesulfonamido)acetic acid: wet wt
+N-MeFOSA - N-methylperfluorooctanesulfonamide
+PFBA - Perfluorobutanoic acid
+PFBA ww - Perfluorobutanoic acid : wet wt
+PFBSA ww - Perfluorobutane sulfonic acid : wet wt
+PFBS - Perfluorobutanesulfonic acid
+PFDA ww - Perfluorodecanoic acid : wet wt
+PFdecncAcid - Perfluorodecanoic acid
+PFDoDA ww - Perfluorododecanoic acid : wet wt
+PFdodencAcid - Perfluorododecanoic acid
+PFDoS - Perfluorododecane sulfonic acid
+PFDSA ww - Perfluorodecane sulphonic acid : wet wt
+PFDS - Perfluorodecanesulfonic acid
+PFecHS - Perfluoro-4-ethylcyclohexanesulfonic acid
+PFecHS ww - Perfluoro(perfluoroethyl)cyclohexanesulfonic acid: wet wt
+PFEESA - Perfluoro(2-ethoxyethane)sulfonic acid
+PFheptncAcid - Perfluoroheptanoic acid
+PFhexncAcid - Perfluorohexanoic acid
+PFHpA ww - Perfluoroheptanoic acid : wet wt
+PFHpSA ww - Perfluoroheptanesulphonic acid : wet wt
+PFHpS - Perfluoroheptanesulfonic acid
+PFHxA ww - Perfluorohexanoic acid : wet wt
+PFHxDA - Perfluorohexadecanoic acid
+PFHxSA - Perfluorohexanesulfonamide
+PFHxSA ww - Perfluorohexanesulphonic acid : wet wt
+PFHxS-B - Perfluorohexanesulfonic acid (B)
+PFHxS-L - Perfluorohexanesulfonic acid (L)
+PFMOBA - Perfluoro(4-methoxybutanoic) acid
+PFMOPrA - Perfluoro-3-methoxypropanoic acid
+PFNA ww - Perfluorononanoic acid : wet wt
+PFnonncAcid - Perfluorononanoic acid
+PFNS - Perfluorononanesulfonic acid
+PFNS ww - Perfluorononanesulfonic acid: wet wt
+PFOA WW - Perfluorooctanoic acid : Wet Wt
+PFOcSu ww - Perfluorooctane sulphonamide : wet wt
+pFoctanoate - Perfluorooctanoate anion
+PFoctncAcid - Perfluorooctanoic acid
+PFODA - Perfluorooctadecanoic acid
+PFOS (B) - Perfluorooctanesulfonic acid (branched)
+PFOS-Br - Perfluorooctanesulphanoate - branched
+PFOS (L) - Perfluorooctanesulfonic acid (linear)
+PFOS-L - Perfluorooctanesulphanoate - linear
+PFOS - Perfluorooctylsulphonate anion
+PFOS (T) - Perfluorooctanesulfonic acid (total)
+PFOS WW - Perfluorooctylsulphonate anion : Wet Wt
+PFPeA ww - Perfluoropentanoic acid : wet wt
+PFpentncAcid - Perfluoropentanoic acid
+PFPeSA ww - Perfluoropentane sulphonic acid : wet wt
+PFPeS - Perfluoropentanesulfonic acid
+PFTeDA ww - Perfluorotetradecanoic acid : wet wt
+PFtetdncAcid - Perfluorotetradecanoic acid
+PFTrDA - Perfluorotridecanoic acid
+PFTrDA ww - Perfluorotridecanoic acid : wet wt
+PFTrDS - Perfluorotridecane sulfonic acid
+PFUnDA ww - Perfluoroundecanoic acid : wet wt
+PFundencAcid - Perfluoroundecanoic acid
+PFUnDS - Perfluoroundecane sulfonic acid
+TrCFMethan - Trichlorofluoromethane
