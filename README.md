@@ -1,4 +1,4 @@
-# PFAS_Fish_Water_2020-24
+Work on PFAS paper
 
 Using R 4.4.3 from https://cran.r-project.org/bin/windows/base/old/4.3.3
 Rstudio version shouldn't matter too much. 64 bit.
