@@ -78,7 +78,7 @@ dataFish_long$Variable <- recode(dataFish_long$Variable,
                                  "Fish_lenght_cm" = "Fish length (cm)")
 
 # Create the plot
-ggplot(dataFish_long, aes(Value, PFOA)) + 
+plotweightlenght <- ggplot(dataFish_long, aes(Value, PFOA)) + 
   geom_point(color = "black", alpha = 0.6, size = 2) +  #Blue color, transparency, point size
   geom_smooth(method = "lm", color = "blue", se = TRUE, fill = "grey", linewidth = 1) +  #Red line with 95% confidence interval
   stat_cor(method = "pearson", label.x.npc = "left", label.y.npc = "top", size = 5) +  # AddR² and p-value
@@ -100,7 +100,12 @@ ggplot(dataFish_long, aes(Value, PFOA)) +
 
 ggplot(dataFish, aes(Fish_weight_Kg, Fish_lenght_cm)) + geom_point() + geom_smooth(method="lm") + labs(title = "Longer fish heavier", x = "Weight (Kg)", y = "Length (cm)")
 
-ggsave("Plotting/weight_vs_length.png")
+ggsave("Plotting/weight_vs_length.png",
+       plot = plotweightlenght,
+       dpi = 1000,
+       width = 6,
+       height = 4)
+
 
 
 
@@ -166,7 +171,8 @@ for (pfas in box_pfas) {
       geom_jitter(width = 0.2, size = 1, alpha = 0.5) +
       scale_y_continuous(limits = c(0, ymax)) + # pin them all to zero lower bound
       theme_bw() +
-      theme(axis.title.x = element_blank(),
+      theme(
+        axis.title.x = element_blank(),
             axis.text.x = element_blank(),
             axis.title.y = element_blank(),
             legend.title = element_blank()) +
@@ -198,7 +204,9 @@ for (fish in box_fish) {
   uk_fish = nrow(these_fish[these_fish$Country == "United Kingdom",])
   
   name <- sprintf("SP=%d UK=%d", sp_fish, uk_fish)
-  plots[[length(plots)+1]] <- as_ggplot(text_grob(name))
+  thing <- text_grob(name) # works
+
+  plots[[length(plots)+1]] <- as_ggplot(thing)
 }
 
 # Combinar todos los gráficos
@@ -206,11 +214,14 @@ final_plot <- plot_grid(plotlist = plots,
                         rel_heights = c(0.25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.25),
                         rel_widths = c(0.75, 1, 1, 1, 1, 1, 1, 1),
                         ncol = 1+length(box_fish),
-                        align = "vh")
+                        align = "vh") 
 
 title <- element_blank()
 
-final_output <- plot_grid(title, final_plot, box_legend, ncol = 1, rel_heights = c(0.05, 1, 0.05))
+final_output <- 
+  plot_grid(title, final_plot, box_legend, ncol = 1, rel_heights = c(0.05, 1, 0.05)) +
+  theme(plot.background = element_rect(fill = "white"))
+
 final_output
 print(final_output)
 # rstudioapi::executeCommand("refreshPlot") # actually draw it
@@ -218,9 +229,13 @@ print(final_output)
 
 ggsave("Plotting/box_plots.png",
        plot = final_output,
-       dpi = 3000,
-       width = 8,
-       height = 4)
+       dpi = 1000,
+       width = 12,
+       height = 12)
+
+
+
+
 
 ############BAR PLOT###########
 
@@ -327,7 +342,12 @@ prow <- plot_grid(british_row, british_percentage, nrow=1)
 both <- plot_grid(prow, british_legend, nrow=2,  rel_heights = c(1, 0.25))
 
 
-ggsave("Plotting/muscle_british_combined.png")
+ggsave("Plotting/muscle_british_combined.png",
+       plot = both,
+       dpi = 1000,
+       width = 10,
+       height = 8)
+
 
 
 #2) PLOTS MUSCLE SPANISH
@@ -411,10 +431,15 @@ british_percentage <- british_percentage + theme(axis.title.y = element_blank())
 
 prow <- plot_grid(spanish_row, spanish_percentage, british_row, british_percentage,nrow=2)
 both <- plot_grid(prow, spanish_legend, nrow=2,  rel_heights = c(1, 0.25))
-both 
+  
+both <- both + theme(plot.background = element_rect(fill = "white"))
 
-ggsave("Plotting/muscle_british_spanish_combined.png")
 
-ggsave("Plotting/muscle_british_spanish_combined.png", 
-       dpi = 150, width = 12, height = 9, units = "in")
+
+
+ggsave("Plotting/muscle_britishspanish_combined.png",
+       plot = both,
+       dpi = 1000,
+       width = 10,
+       height = 8)
 

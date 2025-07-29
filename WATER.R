@@ -7,6 +7,9 @@ library(ggplot2)
 library(maps)
 library(sf)
 library(patchwork)
+library(ggimage)
+library(png)
+library(grid)
 
 # don't need the appended long/lat data so read the smaller/simpler file
 D <- read_csv("DB/sampled.fluor_with_locations.csv")
@@ -395,6 +398,7 @@ subarea_mean <- relocate(subarea_mean, c(longitude, latitude), .after = northing
 subarea_mean <-  mutate(subarea_mean, mean = rowMeans(select(subarea_mean, -c(1:6)), na.rm=T))
 
 
+
 # Draw the UK AREAS
 plot <- ggplot() + 
   geom_polygon(data = map_data('world'), 
@@ -421,18 +425,25 @@ if (T)
 }
 
 
-plot <- plot +  geom_point(data = rot_without_qualifier[rot_without_qualifier$`water type` == "fresh",],
-                           aes(x = longitude,
-                               y = latitude,
-                               shape = 0,
-                               size = PFOA)) + scale_shape_identity()
+#plot <- plot +  geom_point(data = rot_without_qualifier[rot_without_qualifier$`water type` == "fresh",],
+                           #aes(x = longitude,
+                              # y = latitude,
+                               #shape = 0,
+                               #size = PFOA)) + scale_shape_identity()
 
-plot <- plot +  geom_point(data = rot_without_qualifier[rot_without_qualifier$`water type` == "ground",],
-                           aes(x = longitude,
-                               y = latitude,
-                               shape = 2,
-                               size = PFOA)) + scale_shape_identity()
-plot
+#plot <- plot +  geom_point(data = rot_without_qualifier[rot_without_qualifier$`water type` == "ground",],
+                           #aes(x = longitude,
+                            #   y = latitude,
+                             #  shape = 2,
+                              # size = PFOA)) + scale_shape_identity()
+plot2 <- plot
+
+
+ggsave("Plotting/UKareas.png",
+       plot = plot2,
+       dpi = 1000,
+       width = 6,
+       height = 4)
 
 
 ##FRESH
@@ -556,6 +567,11 @@ ggsave("Plotting/combined_map.png", plot = combined_plot, dpi = 300, width = 12,
 ##saved as 1200x900
 
 
+ggsave("Plotting/combined_map.png",
+       plot = combined_plot,
+       dpi = 1000,
+       width = 10,
+       height = 8)
 
 
 
@@ -595,6 +611,7 @@ ground <- ground +
 
 # Show the map
 ground
+
 
 
 
@@ -738,7 +755,14 @@ water_percentage <- water_percentage + theme(legend.position="none")
 prow <- plot_grid(water_row, water_percentage, nrow=1)
 both <- plot_grid(prow, water_legend, nrow=2,  rel_heights = c(1, 0.25))
 
-both
+
+both <- both + theme(plot.background = element_rect(fill = "white"))
+
+ggsave("Plotting/both_water.png",
+       plot = both,
+       dpi = 1000,
+       width = 10,
+       height = 8)
 
 
 
@@ -862,7 +886,7 @@ worst_percentage <- worst %>%
     axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),  # Rotate the X-axis labels
     axis.text.y = element_text(size = 12),  
     legend.title = element_blank(),  
-    legend.text = element_text(size = 12),  a
+    legend.text = element_text(size = 12),
     plot.title = element_text(size = 16, hjust = 0.5),  
     plot.margin = unit(c(1, 1, 1, 1), "cm")  
   )
@@ -968,6 +992,16 @@ print(worst_row)
 
 ggsave("Plotting/MoretoninMarsh.png", plot = worst_row, dpi = 300, width = 10, height = 6)
 
+
+#hotspot <- fresh + worst_row + 
+#  plot_layout(ncol = 2, guides = "keep") 
+
+hotspot <-
+plot_grid(fresh, worst_row, nrow=1)  + theme(plot.background = element_rect(fill = "white"))
+
+ggsave("Plotting/Hotspot.png", plot = hotspot, dpi = 1000, width = 12, height = 7)
+
+# worst_row on rhs
 
 # Guardar la imagen con mejor calidad
 #ggsave("Plotting/worst.png", plot = british_row, dpi = 300, width = 10, height = 6)
@@ -1144,4 +1178,71 @@ cols <- c("sample.sampleDateTime", "sample.samplingPoint")
 print(sprintf("%i groundwater",nrow(unique(select(D[D$is_ground,], cols))) ))
 print(sprintf("%i saline",nrow(unique(select(D[D$is_saline,], cols))) ))
 print(sprintf("%i fresh",nrow(unique(select(D[D$is_fresh,], cols))) ))
+
+
+####GRAPHICAL ABSTRACT
+#install.packages("png")
+#install.packages("grid")
+#library(png)
+#library(grid)
+
+
+
+
+
+#### GRAPHICAL ABSTRACT ####
+
+library(png)
+library(grid)
+
+# Cargar la imagen chemical.png
+
+#chemical <- ggplot() + geom_image(aes(x = 1, y = 1, image = "C:/Users/junqueme/Desktop/chemical.png"), size=1)
+
+# Create a plot with the image
+chemical <- ggplot() + 
+  geom_image(aes(x = 1, y = 1, image = "C:/Users/junqueme/Desktop/chemical.png"), size = 1) + 
+  theme(
+    panel.background = element_blank(),  # Remove background panel
+    plot.background = element_blank(),   # Remove plot background
+    panel.grid = element_blank(),        # Remove grid lines
+    axis.text = element_blank(),         # Remove axis text
+    axis.title = element_blank(),        # Remove axis titles
+    axis.ticks = element_blank()         # Remove axis ticks
+  )
+
+chemical
+
+
+# Agregar los puntos de datos con tamaño y color basado en PFOA
+fresh <- fresh + 
+  geom_point(data = rot_without_qualifier[rot_without_qualifier$`water type` == "fresh",],
+             aes(x = longitude, y = latitude, size = PFOA, color = PFOA), 
+             alpha = 0.7) +  
+  scale_size_continuous(range = c(1, 10), name = "PFOA Concentration") +  
+  scale_color_gradient(low = "blue", high = "red", name = NULL) +  
+  labs(title = "Distribution of freshwater PFOA levels") +  # You can keep the title here, but will remove it later
+  theme(
+    legend.position = "none",  # Remove the legend
+    legend.title = element_blank(),  # Remove the legend title
+    legend.text = element_blank(),   # Remove the legend text
+    plot.title = element_blank(),    # Remove the title
+    plot.margin = unit(c(1,1,1,1), "cm")  # Optional: Add margins to the plot if needed
+  )
+
+
+# Display the plot
+fresh
+
+
+# Añadir la imagen de chemical.png sobre el gráfico
+fresh <- fresh + 
+  annotation_custom(
+    rasterGrob(img, width = unit(0.3, "npc"), height = unit(0.3, "npc")),  # Ajusta el tamaño de la imagen
+    xmin = -6, xmax = -4,  # Ajusta la posición de la imagen (en coordenadas del gráfico)
+    ymin = 52, ymax = 54    # Ajusta la posición vertical
+  )
+
+# Mostrar el mapa con la imagen
+fresh + chemical
 
